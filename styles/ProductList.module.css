@@ -1,0 +1,176 @@
+.subNav {
+    display: flex;
+    gap: 10px;
+    margin-bottom: 20px;
+    align-items: center;
+  }
+  
+  .subNav span {
+    font-weight: bold;
+    color: #333;
+  }
+  
+  .filterButton {
+    background: none;
+    border: 1px solid #e0e0e0;
+    padding: 5px 15px;
+    border-radius: 20px;
+    cursor: pointer;
+    color: #333;
+  }
+  
+  .filterButton.active {
+    background-color: #c62828;
+    color: white;
+    border-color: #c62828;
+  }
+  
+  .productGrid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 20px;
+  }
+  
+  .productCard {
+    border: 1px solid #e0e0e0;
+    border-radius: 8px;
+    overflow: hidden;
+    display: flex;
+    flex-direction: column;
+    background-color: white;
+    min-height: 350px; /* Adjust this value based on your design */
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .productImage {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+  }
+  
+  .cardContent {
+    padding: 15px;
+    display: flex;
+    flex-direction: column;
+    flex-grow: 1;
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+  }
+  
+  .cardInfo {
+    flex-grow: 1;
+  }
+  
+  .cardContent h3 {
+    margin: 0 0 10px 0;
+    font-size: 18px;
+    color: #333;
+  }
+  
+  .cardContent p {
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 10px;
+  }
+  
+  .cardFooter {
+    margin-top: auto;
+  }
+  
+  .priceSection {
+    display: flex;
+    align-items: baseline;
+    margin-bottom: 10px;
+  }
+  
+  .price {
+    font-weight: bold;
+    color: #c62828;
+    font-size: 18px;
+  }
+  
+  .perWeek {
+    color: #666;
+    font-size: 14px;
+    margin-left: 5px;
+  }
+  
+  .comparePrice {
+    text-decoration: line-through;
+    color: #666;
+    font-size: 14px;
+    margin-left: 10px;
+  }
+  
+  .discount {
+    background-color: #c62828;
+    color: white;
+    padding: 2px 5px;
+    border-radius: 3px;
+    font-size: 12px;
+    margin-left: 10px;
+  }
+  
+  .buyButton {
+    display: block;
+    width: 100%;
+    padding: 10px;
+    background-color: #c62828;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+  }
+  
+  .buyButton:hover {
+    background-color: #b71c1c;
+  }
+
+  .skeleton {
+    animation: pulse 1.5s infinite;
+  }
+  
+  @keyframes pulse {
+    0% {
+      opacity: 0.6;
+    }
+    50% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0.6;
+    }
+  }
+  
+  .skeletonImage {
+    background-color: #e0e0e0;
+    height: 200px;
+  }
+  
+  .skeletonText {
+    background-color: #e0e0e0;
+    height: 1em;
+    margin-bottom: 0.5em;
+    border-radius: 3px;
+  }
+  
+  .skeletonTitle {
+    width: 70%;
+  }
+  
+  .skeletonDescription {
+    width: 100%;
+    height: 3em;
+  }
+  
+  .skeletonPrice {
+    width: 50%;
+  }
+  
+  .skeletonButton {
+    opacity: 0.7;
+    cursor: not-allowed;
+  }

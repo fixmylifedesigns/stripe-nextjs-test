@@ -1,0 +1,19 @@
+{
+  "name": "my-stripe-app",
+  "version": "0.1.0",
+  "private": true,
+  "type": "module",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "start": "next start",
+    "lint": "next lint"
+  },
+  "dependencies": {
+    "@stripe/stripe-js": "^4.4.0",
+    "next": "13.x",
+    "react": "18.x",
+    "react-dom": "18.x",
+    "stripe": "^16.10.0"
+  }
+}
